@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Equipment Store - Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏀 Basketball Equipment Store</h1>
+            <p class="subtitle">Premium basketball gear for serious players</p>
+        </header>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="openAddModal()">
+                <span>➕</span> Add New Product
+            </button>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+            </div>
+            <div class="stats">
+                <span id="totalProducts">0</span> Products
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Add/Edit Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Add New Product</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <form id="productForm" onsubmit="saveProduct(event)">
+                <input type="hidden" id="productId">
+                
+                <div class="form-group">
+                    <label for="productName">Product Name *</label>
+                    <input type="text" id="productName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productDescription">Description</label>
+                    <textarea id="productDescription" rows="3"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="productPrice">Price ($) *</label>
+                        <input type="number" id="productPrice" step="0.01" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productQuantity">Quantity *</label>
+                        <input type="number" id="productQuantity" min="0" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="productCategory">Category</label>
+                    <select id="productCategory">
+                        <option value="Footwear">Footwear</option>
+                        <option value="Apparel">Apparel</option>
+                        <option value="Balls">Balls</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Training">Training</option>
+                        <option value="Uncategorized">Uncategorized</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="productImageUrl">Image URL</label>
+                    <input type="url" id="productImageUrl" placeholder="https://example.com/image.jpg">
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quantity Update Modal -->
+    <div id="quantityModal" class="modal">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h2>Update Quantity</h2>
+                <span class="close" onclick="closeQuantityModal()">&times;</span>
+            </div>
+            <form id="quantityForm" onsubmit="updateQuantity(event)">
+                <input type="hidden" id="quantityProductId">
+                
+                <div class="form-group">
+                    <label for="newQuantity">New Quantity</label>
+                    <input type="number" id="newQuantity" min="0" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeQuantityModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

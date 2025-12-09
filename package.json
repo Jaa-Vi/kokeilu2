@@ -1,0 +1,19 @@
+{
+  "name": "kokeilu2",
+  "version": "1.0.0",
+  "description": "Basketball equipment store inventory management system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^12.5.0",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1"
+  }
+}
