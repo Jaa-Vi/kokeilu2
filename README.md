@@ -1,6 +1,6 @@
-# Inventory Management System 📦
+# Basketball Equipment Store - Inventory Management 🏀
 
-A modern, easy-to-use web application for managing retail store inventory. Built with Node.js, Express, SQLite, and vanilla JavaScript.
+A modern, easy-to-use web application for managing basketball sports equipment inventory. Built with Node.js, Express, SQLite, and vanilla JavaScript.
 
 ## Features
 
@@ -17,7 +17,7 @@ A modern, easy-to-use web application for managing retail store inventory. Built
 - **Backend**: Node.js with Express
 - **Database**: SQLite with better-sqlite3
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **Design**: Modern gradient UI with smooth animations
+- **Design**: Modern gradient UI with basketball-themed colors (orange/red) and smooth animations
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ A modern, easy-to-use web application for managing retail store inventory. Built
 4. **Open your browser**:
    Navigate to `http://localhost:3000`
 
-The application will automatically create a local SQLite database (`inventory.db`) and populate it with 20 sample products on first run.
+The application will automatically create a local SQLite database (`inventory.db`) and populate it with 20 basketball equipment products on first run.
 
 ## API Endpoints
 
@@ -60,11 +60,12 @@ The application provides a RESTful API:
 
 ## Sample Products
 
-The database is pre-populated with 20 diverse products across categories:
-- Electronics (laptops, monitors, keyboards, etc.)
-- Furniture (chairs, desks, shelves, etc.)
-- Stationery (notebooks, pens, organizers, etc.)
-- Accessories (backpacks, water bottles, etc.)
+The database is pre-populated with 20 basketball equipment products across categories:
+- Footwear (Nike Air Jordan, Curry shoes, LeBron shoes, etc.)
+- Apparel (jerseys, shorts, compression wear, etc.)
+- Balls (Spalding NBA, Wilson Evolution, training balls, etc.)
+- Accessories (arm sleeves, knee pads, ankle braces, headbands, etc.)
+- Training (cones, resistance bands, dribble goggles, mini hoops, etc.)
 
 ## Project Structure
 

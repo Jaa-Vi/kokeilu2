@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FF6B35 0%, #E63946 100%);
     min-height: 100vh;
     padding: 20px;
     color: #333;
@@ -62,13 +62,13 @@ header h1 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FF6B35 0%, #E63946 100%);
     color: white;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
 }
 
 .btn-secondary {
@@ -118,12 +118,12 @@ header h1 {
 
 .search-box input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #FF6B35;
 }
 
 .stats {
     font-weight: 600;
-    color: #667eea;
+    color: #FF6B35;
     font-size: 1.1rem;
 }
 
@@ -173,7 +173,7 @@ header h1 {
 }
 
 .product-category {
-    background: #667eea;
+    background: #FF6B35;
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
@@ -201,7 +201,7 @@ header h1 {
 .product-price {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #667eea;
+    color: #E63946;
 }
 
 .product-quantity {
@@ -341,7 +341,7 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #FF6B35;
 }
 
 textarea {

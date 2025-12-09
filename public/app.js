@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api/products';
+const API_URL = '/api/products';
 
 let allProducts = [];
 let editingProductId = null;

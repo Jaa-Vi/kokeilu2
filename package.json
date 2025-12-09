@@ -1,7 +1,7 @@
 {
   "name": "kokeilu2",
   "version": "1.0.0",
-  "description": "create a web app to manage inventory of a retail store",
+  "description": "Basketball equipment store inventory management system",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
