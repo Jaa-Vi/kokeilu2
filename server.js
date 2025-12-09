@@ -237,6 +237,12 @@ app.listen(PORT, () => {
 
 // Graceful shutdown
 process.on('SIGINT', () => {
-  db.close();
+  console.log('\nShutting down gracefully...');
+  try {
+    db.close();
+    console.log('Database connection closed');
+  } catch (err) {
+    console.error('Error closing database:', err);
+  }
   process.exit(0);
 });
